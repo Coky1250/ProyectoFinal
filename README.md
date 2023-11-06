@@ -2,7 +2,7 @@
 
 Autores:
 
-Nicolás Rodríguez Mejía
+Nicolás Rodríguez Mejía -
 Jesús Alberto Ortiz Vargas
 
 Descripción: 
