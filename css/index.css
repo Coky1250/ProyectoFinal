@@ -1,0 +1,231 @@
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font
+}
+
+header {
+    background: linear-gradient(to right, green 0%, green 33%, white 33%, white 66%, red 66%, red 100%);
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Navbar Estilos */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-header {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar-title {
+    margin: 0;
+    font-family: 'Italiana';
+}
+
+.navbar-toggle {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1001;
+}
+
+.navbar-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.navbar-dropdown a:hover {
+    background-color: #ddd;
+}
+
+/* Sitio responsivo movil */
+@media (max-width: 768px) {
+    .navbar-title {
+        text-align: left;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-dropdown {
+        top: 60px;
+        right: 10px;
+    }
+}
+
+.menu,
+.payment-methods,
+.delivery-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+
+img {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+   border-radius: 10%;
+}
+
+.product-price {
+    margin-right: 10px;
+   
+}
+
+.add-to-cart {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+   
+    cursor: pointer;
+}
+
+.payment-methods {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.cart {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #000000;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.total {
+    text-align: right;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#checkout-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+h2 {
+
+    text-align: center;
+
+
+}
+
+
+p {
+
+    text-align: center;
+
+
+}
+
+#Menubtn {
+
+
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+ 
+}
+
+h4 {
+    text-align: center;
+
+}
+
+
+
+#Spd {
+
+
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+   
+}
