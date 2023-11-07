@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/indexmenu.css">
     <link rel="shortcut icon" href="../media/Favicon.jpg"/>
     
     <title>Menú</title>
@@ -21,43 +21,128 @@
         </div>
         <button class="navbar-toggle" id="navbarToggle">☰</button>
         <div class="navbar-dropdown" id="navbarDropdown">
-            <a href="/Index.html">Volver al Inicio</a>
-            <a href="/html/Pago.html">Ir a solicitar pedido</a>
+            <a href="./Index.html">Volver al Inicio</a>
+            <a href="./html/Pago.html">Ir a solicitar pedido</a>
         </div>
     </div>
 
 <br>
 
 <h1>Menú</h1>
-    
-<div>
-    <h4>Pizza Hawaiana</h4>
-    <div><img src="/media/1533025888.6461.jpg" height="200" width="400"></div>
-    <h4>Pizza de Pepperoni</h4>
-    <div><img src="/media/5e9977a58c570.jpeg" height="200" width="400"></div>
-    <h4>Pizza de Carnes</h4>
-    <div><img src="/media/cuatro-carnes.png" height="200" width="400"></div>
+<div class="product-container">
+ 
+    <div class="product">
+        <span class="product-name">Pizza Hawaiana Pequeña</span>
+        <img src="../media/Hawaiana.jpg" alt="Pizza Hawaiana">
+        <span class="product-price">$16000</span>
+        <button class="add-to-cart">Agregar al carrito</button>
+    </div>
+<br>
+      <div class="product">
+        <span class="product-name">Pizza Hawaiana Mediana</span>
+        <img src="../media/Hawaiana.jpg" alt="Pizza Hawaiana">
+        <span class="product-price">$24000</span>
+        <button class="add-to-cart">Agregar al carrito</button>
+    </div>
+    <br>
+      <div class="product">
+        <span class="product-name">Pizza Hawaiana Grande</span>
+        <img src="../media/Hawaiana.jpg" alt="Pizza Hawaiana">
+        <span class="product-price">$36000</span>
+        <button class="add-to-cart">Agregar al carrito</button>
+    </div>
+   <br>
+      <div class="product">
+        <span class="product-name">Pizza de Peperoni Pequeña</span>
+        <img src="../media/Peperoni.jpeg" alt="Pizza de Pepperoni">
+        <span class="product-price">$16000</span>
+        <button class="add-to-cart">Agregar al carrito</button>
+    </div>
+<br>
+      <div class="product">
+        <span class="product-name">Pizza de Peperoni Mediana</span>
+            <img src="../media/Peperoni.jpeg" alt="Pizza de Pepperoni">
+            <span class="product-price">$24000</span>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+<br>
+          <div class="product">
+            <span class="product-name">Pizza de de Peperoni Grande</span>
+                <img src="../media/Peperoni.jpeg" alt="Pizza de Pepperoni">
+                <span class="product-price">$36000</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+<br> <br> <br>
 
+      <div class="product">
+        <span class="product-name">Pizza de Carne Pequeña</span>
+            <img src="../media/Carnes.png" alt="Pizza de Carnes">
+            <span class="product-price">$16000</span>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+
+        <br>
+          <div class="product">
+            <span class="product-name">Pizza de Carne Mediana</span>
+                <img src="../media/Carnes.png" alt="Pizza de Carnes">
+                <span class="product-price">24.000</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <br>
+              <div class="product">
+                <span class="product-name">Pizza de Carne Grande</span>
+                    <img src="../media/Carnes.png" alt="Pizza de Carnes">
+                    <span class="product-price">$16000</span>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+
+
+      <br>
+
+
+        <div class="product">
+            <span class="product-name">Pizza de Pollo y Champiñones Pequeña</span>
+                <img src="../media/Pollo_Champ.webp" alt="Pizza de Pollo">
+                <span class="product-price">$16000</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <br>
+              <div class="product">
+                <span class="product-name">Pizza de Pollo y Champiñones Mediana</span>
+                <img src="../media/Pollo_Champ.webp" alt="Pizza de Pollo">
+                <span class="product-price">$24000</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div><br>
+             <div class="product">
+            <span class="product-name">Pizza de Pollo y Champiñones Grande</span>
+                <img src="../media/Pollo_Champ.webp" alt="Pizza de Pollo">
+                <span class="product-price">$36000</span>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+
+            <br>
+            
+</div>
+</div>
 </div>
 
-
-<div>
-    <h4>Pizza Mexicana</h4>
-    <div><img src="/media/descarga.jpeg" height="200" width="400"></div>
-
-    <h4>Pizza de Pollo</h4>
-    <div><img src="/media/Pollo-y-Champiñones-1200X628.webp" height="200" width="400"></div>
-
-</div>
+<section class="cart">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart-items">
+        
+    </ul>
+    <div class="total">
+        <span>Total:</span>
+        <span id="cart-total">$0.00</span>
+    </div>
+    <button id="checkout-btn">Pagar en Efectivo</button>
+</section>
 
 <br>
-<form action="./Pago.html">
+<form>
     <button id="Spd">Solicitar Pedido</button>
 
 </form>
-
-<br><br>
-
 
 <script src="../js/index.js"></script>
 

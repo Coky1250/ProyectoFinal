@@ -2,9 +2,9 @@ body {
     font-family: 'SF Pro Display';
     background-color: #000000;
     color: white;
-    margin: 0;
     padding: 0;
-    text-align: center;
+
+
 }
 
 header {
@@ -76,6 +76,14 @@ h1 {
     background-color: #ddd;
 }
 
+
+
+.product-price {
+    font-weight: bold;
+    color: #FFA500;
+    /* Color de precio */
+}
+
 /* Sitio responsivo movil */
 @media (max-width: 768px) {
     .navbar-title {
@@ -92,66 +100,47 @@ h1 {
     }
 }
 
-.menu,
-.payment-methods,
-.delivery-form {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 .product {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-   
-}
-
-img {
-    text-align: center;
-    display: flex;
-    margin: 10px ;
-   border-radius: 10%;
-   
-   
-}
-.socialmedia {
-    display: flex;
-  
-    justify-content: center;
-  }
-  
-
-#socialm{
-
-height: 50px;
-
-
-}
-
-#menumenu {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Las imágenes ocuparán al menos 200px y se ajustarán automáticamente */
-    gap: 20px; /* Espacio entre las imágenes */
-    justify-items: center; /* Centrar horizontalmente las imágenes */
-    align-items: start; /* Alinear las imágenes en la parte superior del espacio asignado */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Las imágenes ocuparán al menos 200px y se ajustarán automáticamente */
+    gap: 20px;
+    /* Espacio entre las imágenes */
+    justify-items: center;
+    /* Centrar horizontalmente las imágenes */
+    align-items: center;
+    /* Centrar verticalmente las imágenes */
     text-align: center;
     margin: 0 auto;
     border-radius: 10%;
+
+   
+
 }
+ .product-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Asegura que los elementos de la cuadrícula se envuelvan si no caben en una sola línea */
+        padding: 20px; /* Añade espacio alrededor de la cuadrícula si es necesario */
+      }
+
+img {
 
 
+    display: block;
+    /* Hace que la imagen sea un elemento en línea */
+    margin: 0 auto;
+    /* Centra horizontalmente la imagen dentro del contenedor */
+    border-radius: 10%;
+    height: 150px;
+    width: 250px;
 
-
-    
+}
 
 .product-price {
     margin-right: 10px;
-   
+
 }
 
 .add-to-cart {
@@ -160,14 +149,11 @@ height: 50px;
     border: none;
     padding: 5px 10px;
     border-radius: 20px;
-   
+
     cursor: pointer;
 }
 
-.payment-methods {
-    text-align: center;
-    margin-top: 20px;
-}
+
 
 input[type="radio"] {
     margin-right: 5px;
@@ -187,42 +173,6 @@ input[type="radio"] {
 .total {
     text-align: right;
     margin-top: 10px;
-}
-
-input[type="text"] {
-    width: 40%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 24px;
-}
-
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
-
-input[type="number"] {
-    width: 40%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 24px;
-}
-
-input[type="password"] {
-    width: 40%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 24px;
-    
 }
 
 
@@ -273,7 +223,7 @@ p {
     text-align: center;
     display: block;
     margin: 0 auto;
- 
+
 }
 
 h4 {
@@ -296,5 +246,5 @@ h4 {
     text-align: center;
     display: block;
     margin: 0 auto;
-   
+
 }
