@@ -20,6 +20,16 @@ h1 {
 }
 
 
+label{
+    font-size: 18px;
+    font-family: 'Italiana';
+}
+
+p{
+    font-family: 'Italiana';
+}
+
+
 /* Navbar Estilos */
 .navbar {
     position: fixed;
@@ -144,11 +154,6 @@ height: 50px;
     border-radius: 10%;
 }
 
-
-
-
-    
-
 .product-price {
     margin-right: 10px;
    
@@ -226,9 +231,6 @@ input[type="password"] {
 }
 
 
-
-
-
 #checkout-btn {
     background-color: #ff0000;
     color: #fff;
@@ -252,16 +254,9 @@ p {
     text-align: center;
     color: white;
 
-
 }
 
-
-
-
-
-
 #Menubtn {
-
 
     background-color: #ff0000;
     color: #fff;
@@ -281,8 +276,6 @@ h4 {
 
 }
 
-
-
 #Spd {
 
 
@@ -297,4 +290,52 @@ h4 {
     display: block;
     margin: 0 auto;
    
+}
+
+#ingresar {
+
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+   
+}
+
+#registrar {
+
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+   
+}
+
+.especial{
+    display: inline-block;
+    width: 120px; /* Ajusta este valor según tu diseño */
+    margin-bottom: 5px;
+}
+
+.container input {
+    width: 200px; /* Ajusta este valor según tu diseño */
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.container2 input {
+    width: 190px; /* Ajusta este valor según tu diseño */
+    padding: 10px;
+    margin-bottom: 10px;
 }

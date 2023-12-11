@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - PIZZAROMA</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-header">
+                <h1 class="navbar-title">PIZZAROMA</h1>
+            </div>
+        </div>
+        <h1>Registro - Restaurante</h1>
+    </header>
+    
+    <div class="menu">
+        <h2>Registro</h2>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="container">
+                <label for="{{ register_form.username.id_for_label }}" class="especial">Usuario:</label>
+                <div>{{ register_form.username }}</div>
+                <label for="{{ register_form.email.id_for_label }}" class="especial">Email:</label>
+                <div class="container2">{{ register_form.email }}</div>
+                <label for="{{ register_form.password1.id_for_label }}" class="especial">Contraseña:</label>
+                <div>{{ register_form.password1 }}
+                <br>
+                <label for="{{ register_form.password2.id_for_label }}" class="especial">Confirmar Contraseña:</label>
+                <div>{{ register_form.password2 }}</div>
+                <button class="btn btn-primary" type="submit"  id="registrar">Registrar</button>
+            </div>
+        </form>
+        <p class="text-center"><b>Si ya tienes una cuenta,</b> <a href="{% url 'login' %}"><b>inicia sesión</b></a>.</p>
+    </div>
+
+    <footer>
+        <p>© 2023 PIZZAROMA</p>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com"><img src="{% static 'media/fb.png' %}" id="socialm"></a>
+            <a href="https://www.instagram.com"><img src="{% static 'media/ig.png' %}" id="socialm"></a>
+            <a href="https://www.whatsapp.com"><img src="{% static 'media/wp.png' %}" id="socialm"></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

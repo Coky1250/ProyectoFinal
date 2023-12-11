@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Restaurante</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-header">
+                <h1 class="navbar-title">PIZZAROMA</h1>
+            </div>
+
+        </div>
+        <h1>Login - Restaurante</h1>
+    </header>
+
+    <div class="menu">
+        <h2>Iniciar Sesión</h2><br>
+        <form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+            <div class="container">
+                {% if form.errors %}
+                <p>Nombre de Usuario o Contraseña Incorrectos.</p>
+                {% endif %}
+
+                {% if next %}
+                {% if user.is_authenticated %}
+                <p>Tu cuenta no tiene acceso a esta página, si tienes otra cuenta por favor
+                    ingresa tus credenciales.</p>
+                {% else %}
+                {% endif %}
+                {% endif %}
+
+                <div><label for="uname"><b>Usuario:</b></label></div><br>
+                <div>{{ form.username }}</div>
+
+                <div><label for="psw"><b>Contraseña:</b></label></div><br>
+                <div>{{ form.password }}</div><br>
+
+                <button type="submit" id="ingresar">Ingresar</button>
+                <label>
+                    <p>¿No tienes cuenta? <a href="{% url 'registro' %}"><b>Registrate</b></a></p>
+                </label>
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2023 PIZZAROMA</p>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com"><img src="{% static 'media/fb.png' %}" id="socialm"></a>
+            <a href="https://www.instagram.com"><img src="{% static 'media/ig.png' %}" id="socialm"></a>
+            <a href="https://www.whatsapp.com"><img src="{% static 'media/wp.png' %}" id="socialm"></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>

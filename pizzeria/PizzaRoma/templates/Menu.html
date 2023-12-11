@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="spa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Italiana' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/indexmenu.css' %}">
+    <link rel="shortcut icon" href="../media/Favicon.jpg"/>
+    
+    <title>Menú</title>
+</head>
+<body>
+
+    <header>
+        <h1>PIZZAROMA</h1>
+    </header>
+    <div class="navbar">
+        <div class="navbar-header">
+            <h1 class="navbar-title">PIZZAROMA</h1>
+        </div>
+        <button class="navbar-toggle" id="navbarToggle">☰</button>
+        <div class="navbar-dropdown" id="navbarDropdown">
+            <a href="{% url 'index' %}">Volver al Inicio</a>
+            <a href="{% url 'menu' %}">Ir al Menu</a>
+            <a href="{% url 'estadisticas' %}">Ir a Estadisticas</a>
+        </div>
+    </div>
+
+<br>
+
+<h1>Menú</h1>
+<div class="product-container">
+ 
+    <div class="product">
+        <span class="product-name">Pizza Hawaiana Pequeña</span>
+        <img src="{% static 'media/Hawaiana.jpg' %}" alt="Pizza Hawaiana">
+        <span class="product-price">$16000</span>
+        <button class="add-to-cart" data-id="hawaiana-pequena" data-price="16000">Agregar al carrito</button>
+    </div>
+<br>
+      <div class="product">
+        <span class="product-name">Pizza Hawaiana Mediana</span>
+        <img src="{% static 'media/Hawaiana.jpg' %}" alt="Pizza Hawaiana">
+        <span class="product-price">$24000</span>
+        <button class="add-to-cart" data-id="hawaiana-mediana"  data-price="24000">Agregar al carrito</button>
+    </div>
+    <br>
+      <div class="product">
+        <span class="product-name">Pizza Hawaiana Grande</span>
+        <img src="{% static 'media/Hawaiana.jpg' %}" alt="Pizza Hawaiana">
+        <span class="product-price">$36000</span>
+        <button class="add-to-cart" data-id="hawaiana-grande" data-price="36000">Agregar al carrito</button>
+    </div>
+   <br>
+      <div class="product">
+        <span class="product-name">Pizza de Peperoni Pequeña</span>
+        <img src="{% static 'media/Peperoni.jpeg' %}" alt="Pizza de Pepperoni">
+        <span class="product-price">$16000</span>
+        <button class="add-to-cart" data-id="Pepperoni-pequena" data-price="16000">Agregar al carrito</button>
+    </div>
+<br>
+      <div class="product">
+        <span class="product-name">Pizza de Peperoni Mediana</span>
+        <img src="{% static 'media/Peperoni.jpeg' %}" alt="Pizza de Pepperoni">
+            <span class="product-price">$24000</span>
+            <button class="add-to-cart" data-id="Pepperoni-mediana" data-price="24000">Agregar al carrito</button>
+        </div>
+<br>
+          <div class="product">
+            <span class="product-name">Pizza de de Peperoni Grande</span>
+            <img src="{% static 'media/Peperoni.jpeg' %}" alt="Pizza de Pepperoni">
+                <span class="product-price">$36000</span>
+                <button class="add-to-cart" data-id="Pepperoni-grande" data-price="36000">Agregar al carrito</button>
+            </div>
+<br> <br> <br>
+
+      <div class="product">
+        <span class="product-name">Pizza de Carne Pequeña</span>
+        <img src="{% static 'media/Carnes.png' %}" alt="Pizza de Carnes">
+            <span class="product-price">$16000</span>
+            <button class="add-to-cart" data-id="carne-pequena" data-price="16000">Agregar al carrito</button>
+        </div>
+
+        <br>
+          <div class="product">
+            <span class="product-name">Pizza de Carne Mediana</span>
+            <img src="{% static 'media/Carnes.png' %}" alt="Pizza de Carnes">
+                <span class="product-price">24000</span>
+                <button class="add-to-cart" data-id="carne-mediana" data-price="24000">Agregar al carrito</button>
+            </div>
+            <br>
+              <div class="product">
+                <span class="product-name">Pizza de Carne Grande</span>
+                <img src="{% static 'media/Carnes.png' %}" alt="Pizza de Carnes">
+                    <span class="product-price">$16000</span>
+                    <button class="add-to-cart" data-id="carne-grande" data-price="36000">Agregar al carrito</button>
+                </div>
+
+
+      <br>
+
+
+        <div class="product">
+            <span class="product-name">Pizza de Pollo y Champiñones Pequeña</span>
+            <img src="{% static 'media/Pollo_Champ.webp' %}" alt="Pizza de Pollo">
+                <span class="product-price">$16000</span>
+                <button class="add-to-cart" data-id="pollochampiñones-pequena" data-price="16000">Agregar al carrito</button>
+            </div>
+            <br>
+              <div class="product">
+                <span class="product-name">Pizza de Pollo y Champiñones Mediana</span>
+                <img src="{% static 'media/Pollo_Champ.webp' %}" alt="Pizza de Pollo">
+                <span class="product-price">$24000</span>
+                <button class="add-to-cart" data-id="pollochampiñones-mediana" data-price="24000">Agregar al carrito</button>
+            </div><br>
+             <div class="product">
+            <span class="product-name">Pizza de Pollo y Champiñones Grande</span>
+            <img src="{% static 'media/Pollo_Champ.webp' %}" alt="Pizza de Pollo">
+                <span class="product-price">$36000</span>
+                <button class="add-to-cart" data-id="pollochampiñones-grande" data-price="36000">Agregar al carrito</button>
+            </div>
+
+            <br>
+            
+</div>
+</div>
+</div>
+
+<section class="cart">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart-items">
+        
+    </ul>
+    <div class="total">
+        <span>Total:</span>
+        <span id="cart-total">$0.00</span>
+    </div>
+    <button id="checkout-btn" onclick="pedido_realizado()">Pagar en Efectivo</button>
+      
+    <script>
+        function pedido_realizado() {
+            // Obtén el elemento del carrito
+            var cartItems = document.getElementById("cart-items");
+
+            // Verifica si hay elementos en el carrito
+            if (cartItems.children.length > 0) {
+                // Muestra una alerta con el mensaje personalizado
+                alert("¡Su pedido llegará pronto! Gracias por su compra.");
+
+                // Puedes agregar aquí cualquier otra lógica relacionada con el pago en efectivo
+
+                // Limpia el carrito (puedes ajustar esto según tu implementación)
+                cartItems.innerHTML = "";
+                document.getElementById("cart-total").textContent = "$0.00";
+            } else {
+                // Muestra una alerta indicando que el carrito está vacío
+                alert("Su carrito está vacío. Agregue productos antes de proceder al pago.");
+            }
+        }
+    </script>
+
+
+
+
+
+
+</section>
+
+<br>
+
+
+<script src="{% static 'js/index.js' %}"></script>
+
+</body>
+</html>
